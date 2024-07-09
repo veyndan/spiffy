@@ -1,6 +1,5 @@
 :root {
-	/* TODO Use relative colors */
-	--color-hsl: 0 0% 10%;
+	--color: hsl(0 0% 10%);
 	color-scheme: light dark;
 }
 
@@ -41,7 +40,7 @@ img {
 	max-inline-size: 100%;
 	margin-block: 2.8rem;
 	font-style: italic;
-	background: hsl(var(--color-hsl) / 0.05);
+	background: hsl(from var(--color) h s l / 0.05);
 }
 
 footer {
@@ -60,6 +59,6 @@ address {
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--color-hsl: 0 100% 99%;
+		--color: hsl(0 100% 99%);
 	}
 }
