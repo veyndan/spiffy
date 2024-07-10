@@ -22,7 +22,7 @@ body {
 	margin-block: clamp(2.4rem, 8vi, 3.6rem);
 }
 
-main > :not(img, table), footer > * {
+body > :not(main) > *, main > :not(img, table) {
 	padding-inline: 1.4rem;
 	margin-inline: auto;
 	inline-size: min(36rem, 100%);
