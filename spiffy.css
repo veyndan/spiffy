@@ -8,7 +8,8 @@
 }
 
 html {
-	font: clamp(16px, .6rem + 1vi, 18px)/1.5 system-ui;
+	font-family: system-ui;
+	line-height: 1.5;
 }
 
 body {
