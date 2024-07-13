@@ -29,6 +29,27 @@ body > :not(main) > *, main > :not(img, table) {
 	inline-size: min(36rem, 100%);
 }
 
+header > nav {
+	& > ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1em;
+		list-style-type: none;
+		padding-inline: 0;
+	}
+
+	a {
+		&:any-link {
+			color: LinkText;
+		}
+
+		&[aria-current="page"] {
+			color: inherit;
+			text-decoration: inherit;
+		}
+	}
+}
+
 img::before {
 	padding-inline: 1.4rem;
 }
