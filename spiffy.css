@@ -36,6 +36,10 @@ header > nav {
 		gap: 1em;
 		list-style-type: none;
 		padding-inline: 0;
+
+		& > li:first-child:has(> a[href="/index.xml"]) {
+			margin-inline-end: auto;
+		}
 	}
 
 	a {
